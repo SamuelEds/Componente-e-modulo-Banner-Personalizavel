@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extension type="component" method="upgrade" version="3.0">
+	
+	<name>COM_BANNERPERSON</name>
+
+	<author>Samuel Edson</author>
+	<authorUrl>www.imcdigital.com.br</authorUrl>
+	<authorEmail>samueledshotmailgm@gmail.com</authorEmail>
+	<creationDate>04/09/2021</creationDate>
+	<license>Projeto sobre licensa GNU.</license>
+	<copyright>© 2021 - Imagine Comunicação Dgital - Todos os direitos reservados.</copyright>
+
+	<description>COM_BANNERPERSON_DESCRICAO</description>
+
+	<version>0.0.4</version>
+
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<files folder="site">
+
+		<filename>index.html</filename>
+		<filename>bannerperson.php</filename>
+		<filename>controller.php</filename>
+	
+		<folder>controllers</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+
+	</files>
+
+	<languages folder="site/language">
+		<filename tag="pt-BR">pt-BR/pt-BR.com_bannerperson.ini</filename>
+	</languages>
+
+	<administration>
+		
+		<menu link="?option=com_bannerperson">COM_BANNERPERSON_MENU</menu>
+
+		<files folder="admin">
+			
+			<filename>index.html</filename>
+			<filename>bannerperson.php</filename>
+			<filename>controller.php</filename>
+
+			<folder>controllers</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>sql</folder>
+
+		</files>
+
+		<languages folder="admin/language">
+			<filename tag="pt-BR">pt-BR/pt-BR.com_bannerperson.sys.ini</filename>
+			<filename tag="pt-BR">pt-BR/pt-BR.com_bannerperson.ini</filename>
+		</languages>
+
+	</administration>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Atualizacao Banner Person">http://localhost/Joomla_samuel/servidores-de-atualizacoes/banner-personalizavel/bannerperson.xml</server>
+	</updateservers>
+
+</extension>
