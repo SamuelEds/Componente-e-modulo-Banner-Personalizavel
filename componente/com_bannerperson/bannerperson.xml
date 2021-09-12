@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<extension type="component" method="upgrade" version="3.0">
+<extension type="component" method="upgrade" version="3.9">
 	
 	<name>COM_BANNERPERSON</name>
 
@@ -14,6 +14,18 @@
 	<description>COM_BANNERPERSON_DESCRICAO</description>
 
 	<version>0.0.4</version>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
 
 	<update>
 		<schemas>
